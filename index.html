@@ -12,22 +12,23 @@
     
     <body>
        <div class="row">
-        <div class="menu panel" style="background-color: cornflowerblue">
+        <div class="menu panel col-1" style="background-color: cornflowerblue">
             <hr />
             <a href="#">
-                <span class="fas fa-home"></span>
+                <span class="1 fas fa-home"></span>
             </a>
             <hr />
             <a href="#">
-                <span class="fas fa-baby-carriage"></span>
+                <span class="2 fas fa-baby-carriage"></span>
             </a>
             <hr />
             <a href="#">
-                <span class="fas fa-baby"></span>
+                <span class="3 fas fa-baby"></span>
             </a>
+            <hr />
         </div>
            
-        <div class="col-8 panel main-news">
+        <div class="col-9 panel main-news">
             
     <div class="col-1"></div>
     <div class="col-md-10">
@@ -100,6 +101,26 @@
             <i class="large fas fa-ad"></i>
         </div>
        </div>
+        
+        <script>
+            let menuBox = document.querySelector(".menu");
+            let newsBox = document.querySelector(".main-news");
+            menuBox.addEventListener('mouseover', function(){
+                menuBox.classList.remove('col-1');
+                menuBox.classList.add('col-2');
+                newsBox.classList.remove('col-9');
+                newsBox.classList.add('col-8');
+            })
+            
+            menuBox.addEventListener('mouseout', function(){
+                menuBox.classList.remove('col-2');
+                menuBox.classList.add('col-1');
+                newsBox.classList.remove('col-8');
+                newsBox.classList.add('col-9');
+            })
+        
+        </script>
+        
     </body>
 
 
