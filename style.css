@@ -21,6 +21,10 @@ hr {
     margin-left: 10px;
 }
 
+.menu {
+    opacity: 0.7;
+}
+
 .menu-item {
     padding-bottom: 2rem;
     font-size: 2rem;
