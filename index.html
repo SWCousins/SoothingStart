@@ -25,7 +25,7 @@
             </a>
             <hr />
             <a href="#">
-                <span class="3 fas fa-baby"></span>
+                <span class="3 fas fa-baby baby"></span>
             </a>
             <hr />
         </div>
@@ -108,6 +108,7 @@
             let menuBox = document.querySelector(".menu");
             let newsBox = document.querySelector(".main-news");
             let homeIcon = document.querySelector(".home");
+            let babyIcon = document.querySelector(".baby")
             
             menuBox.addEventListener('mouseover', function(){
                 menuBox.classList.remove('col-1');
@@ -115,6 +116,7 @@
                 newsBox.classList.remove('col-9');
                 newsBox.classList.add('col-8');
                 homeIcon.innerHTML = "Home";
+                babyIcon.innerHTML = "Parenting"
             })
             
             menuBox.addEventListener('mouseout', function(){
@@ -123,6 +125,7 @@
                 newsBox.classList.remove('col-8');
                 newsBox.classList.add('col-9');
                 homeIcon.innerHTML = "";
+                babyIcon.innerHTML = "";
             })
         
         </script>
