@@ -1,0 +1,8 @@
+{
+    userName: "",
+    emailAddress: "",
+    password: "",
+    voucher: "",
+    signatureKey: "",
+    profileImage: ""
+}
