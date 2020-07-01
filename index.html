@@ -17,15 +17,15 @@
         <div class="menu panel col-1">
             <hr />
             <a href="#">
-                <span class="1 fas fa-home home"></span>
+                <span class="1 fas fa-home"> <span class="home"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="2 fas fa-baby-carriage"></span>
+                <span class="2 fas fa-baby-carriage"> <span class="carriage"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="3 fas fa-baby baby"></span>
+                <span class="3 fas fa-baby"> <span class="baby"></span></span>
             </a>
             <hr />
         </div>
@@ -97,7 +97,7 @@
 
 
         </div>
-        <div class="col-2 panel ad-panel" style="background-color: bisque">
+        <div class="col-2 panel ad-panel" style="background-color: paleturquoise">
             <i class="large fas fa-ad"></i>
             <i class="large fas fa-ad"></i>
             <i class="large fas fa-ad"></i>
@@ -108,24 +108,29 @@
             
             let menuBox = document.querySelector(".menu");
             let newsBox = document.querySelector(".main-news");
+            let adBox = document.querySelector(".ad-panel");
+            
             let homeIcon = document.querySelector(".home");
-            let babyIcon = document.querySelector(".baby")
+            let carriageIcon = document.querySelector(".carriage");
+            let babyIcon = document.querySelector(".baby");
             
             menuBox.addEventListener('mouseover', function(){
                 menuBox.classList.remove('col-1');
-                menuBox.classList.add('col-2');
+                menuBox.classList.add('col-3');
                 newsBox.classList.remove('col-9');
-                newsBox.classList.add('col-8');
+                newsBox.classList.add('col-7');
                 homeIcon.innerHTML = "Home";
-                babyIcon.innerHTML = "Parenting"
-            })
+                carriageIcon.innerHTML = "Childcare";
+                babyIcon.innerHTML = "Parenting";
+            });
             
             menuBox.addEventListener('mouseout', function(){
-                menuBox.classList.remove('col-2');
+                menuBox.classList.remove('col-3');
                 menuBox.classList.add('col-1');
-                newsBox.classList.remove('col-8');
+                newsBox.classList.remove('col-7');
                 newsBox.classList.add('col-9');
                 homeIcon.innerHTML = "";
+                carriageIcon.innerHTML = "";
                 babyIcon.innerHTML = "";
             })
         
