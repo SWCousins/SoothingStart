@@ -23,6 +23,7 @@ hr {
 
 .menu {
     opacity: 0.7;
+    background-color: aliceblue;
 }
 
 .menu-item {
@@ -37,7 +38,13 @@ hr {
 }
 
 .main-news {
-    background-color: floralwhite;
+    background-color: #eeccee;
+}
+
+.post {
+    background-color: azure;
+    opacity: 0.8;
+    background-blend-mode: lighten;
 }
 
 .border {
