@@ -2,7 +2,13 @@
     userName: "",
     emailAddress: "",
     password: "",
-    voucher: "",
-    signatureKey: "",
-    profileImage: ""
+    
+    security: {
+        voucher: "",
+        signatureKey: ""
+    },
+    
+    profileImage: "",
+    posts: [],
+    friends: []
 }
