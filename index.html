@@ -17,15 +17,19 @@
         <div class="menu panel col-1">
             <hr />
             <a href="#">
-                <span class="1 fas fa-home"> <span class="home"></span></span>
+                <span class="1 fas fa-home icon"> <span class="home"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="2 fas fa-baby-carriage"> <span class="carriage"></span></span>
+                <span class="2 fas fa-baby-carriage icon"> <span class="carriage"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="3 fas fa-baby"> <span class="baby"></span></span>
+                <span class="3 fas fa-baby icon"> <span class="baby"></span></span>
+            </a>
+            <hr />
+            <a href="#">
+                <span class="far fa-newspaper icon"> <span class="classifieds"></span></span>
             </a>
             <hr />
         </div>
@@ -34,7 +38,7 @@
             
     <div class="col-1"></div>
     <div class="col-md-10">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative post">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative post featured">
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
             <title>Placeholder</title>
@@ -93,6 +97,26 @@
       </div>
     </div>
             
+        <div class="col-md-10">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative post">
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"/>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        
+      </div>
+    </div>
+            
 
 
 
@@ -113,6 +137,7 @@
             let homeIcon = document.querySelector(".home");
             let carriageIcon = document.querySelector(".carriage");
             let babyIcon = document.querySelector(".baby");
+            let classifiedsIcon = document.querySelector(".classifieds")
             
             menuBox.addEventListener('mouseover', function(){
                 menuBox.classList.remove('col-1');
@@ -122,6 +147,7 @@
                 homeIcon.innerHTML = "Home";
                 carriageIcon.innerHTML = "Childcare";
                 babyIcon.innerHTML = "Parenting";
+                classifiedsIcon.innerHTML = "Classifieds"
             });
             
             menuBox.addEventListener('mouseout', function(){
@@ -132,6 +158,7 @@
                 homeIcon.innerHTML = "";
                 carriageIcon.innerHTML = "";
                 babyIcon.innerHTML = "";
+                classifiedsIcon.innerHTML = "";
             })
         
         </script>

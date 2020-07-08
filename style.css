@@ -15,7 +15,7 @@ hr {
     align-content: center;
 }
 
-.fas {
+.icon {
     font-size: 3rem;
     padding-left: 1rem;
     margin-left: 10px;
@@ -24,6 +24,11 @@ hr {
 .menu {
     opacity: 0.65;
     background-color: aliceblue;
+    z-index: 3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 46rem;
 }
 
 .menu-item {
@@ -40,11 +45,16 @@ hr {
 .main-news {
     background-color: #e5c0d5;
     opacity: 0.9;
+    z-index: 1;
 }
 
 .post {
     background-color: azure;
     opacity: 0.8;
+}
+
+.featured {
+    background-color: bisque;
 }
 
 .border {
@@ -58,4 +68,5 @@ hr {
   top: 0;
   float:right;
   opacity: 0.75;
+  height: 46rem;
 }
