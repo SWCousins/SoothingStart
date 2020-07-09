@@ -2,13 +2,24 @@
     userName: "",
     emailAddress: "",
     password: "",
+    userId: 0,
     
     security: {
-        voucher: "",
+        voucher: {
+            value: "",
+            valid: false,
+            timer: 0
+        },
         signatureKey: ""
     },
     
     profileImage: "",
-    posts: [],
+    posts: [
+        {
+            id: 0,
+            image: "",
+            text: ""
+        }
+    ],
     friends: []
 }
