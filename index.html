@@ -8,35 +8,51 @@
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
+        <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
+        <div class="row main-news col-12">
+            <img class="title" src="assets/SoothingStartLogo.png" />
+        <div class="navbar">
+            <a href="#news" class="btn btn-success">Login</a>
+        </div>
+        </div>
         
        <div class="row">
-        <div class="menu panel col-1">
+        <div class="menu col-0.5">
+            
             <hr />
             <a href="#">
-                <span class="1 fas fa-home icon"> <span class="home"></span></span>
+                <span class="1 fas fa-home icon"> <span class="home text"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="2 fas fa-baby-carriage icon"> <span class="carriage"></span></span>
+                <span class="2 fas fa-baby-carriage icon"> <span class="carriage text"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="3 fas fa-baby icon"> <span class="baby"></span></span>
+                <span class="3 fas fa-baby icon"> <span class="baby text"></span></span>
             </a>
             <hr />
             <a href="#">
-                <span class="far fa-newspaper icon"> <span class="classifieds"></span></span>
+                <span class="far fa-newspaper icon"> <span class="classifieds text"></span></span>
+            </a>
+            <hr />
+            <a href="#">
+                <span class="far fa-comments icon"> <span class="forum text"></span></span>
             </a>
             <hr />
         </div>
            
+        
+           
         <div class="col-9 panel main-news">
             
     <div class="col-1"></div>
+            
     <div class="col-md-10">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative post featured">
           <div class="col-auto d-none d-lg-block">
@@ -122,46 +138,14 @@
 
         </div>
         <div class="col-2 panel ad-panel" style="background-color: paleturquoise">
-            <i class="large fas fa-ad"></i>
+            <i class="large fas fa-ad ad"></i>
             <i class="large fas fa-ad"></i>
             <i class="large fas fa-ad"></i>
         </div>
+           <div class="main-news panel col-0.5"></div>
        </div>
         
-        <script>
-            
-            let menuBox = document.querySelector(".menu");
-            let newsBox = document.querySelector(".main-news");
-            let adBox = document.querySelector(".ad-panel");
-            
-            let homeIcon = document.querySelector(".home");
-            let carriageIcon = document.querySelector(".carriage");
-            let babyIcon = document.querySelector(".baby");
-            let classifiedsIcon = document.querySelector(".classifieds")
-            
-            menuBox.addEventListener('mouseover', function(){
-                menuBox.classList.remove('col-1');
-                menuBox.classList.add('col-3');
-                newsBox.classList.remove('col-9');
-                newsBox.classList.add('col-7');
-                homeIcon.innerHTML = "Home";
-                carriageIcon.innerHTML = "Childcare";
-                babyIcon.innerHTML = "Parenting";
-                classifiedsIcon.innerHTML = "Classifieds"
-            });
-            
-            menuBox.addEventListener('mouseout', function(){
-                menuBox.classList.remove('col-3');
-                menuBox.classList.add('col-1');
-                newsBox.classList.remove('col-7');
-                newsBox.classList.add('col-9');
-                homeIcon.innerHTML = "";
-                carriageIcon.innerHTML = "";
-                babyIcon.innerHTML = "";
-                classifiedsIcon.innerHTML = "";
-            })
-        
-        </script>
+        <script src="frontend.js"></script>
         
     </body>
 

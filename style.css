@@ -9,6 +9,33 @@ hr {
     margin-left: 1rem;
 }
 
+.title {
+    margin-left: 7rem;
+    height: 5rem;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ccc;
+  position:fixed;
+  top: 0;
+  right: 0;
+  width: 7%;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  justify-content:center;
+  float: right;
+  background-color: paleturquoise;
+  padding: 0.5rem;
+  margin-right: 18rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
 .panel {
     height: auto;
     justify-content: center;
@@ -16,7 +43,7 @@ hr {
 }
 
 .icon {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 1rem;
     margin-left: 10px;
 }
@@ -24,16 +51,18 @@ hr {
 .menu {
     opacity: 0.65;
     background-color: aliceblue;
-    z-index: 3;
+    z-index: 1;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 46rem;
+    height: 100%;
+    border-radius: 1rem;
 }
 
-.menu-item {
-    padding-bottom: 2rem;
-    font-size: 2rem;
+.text {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    text-align: right;
 }
 
 .large {
@@ -45,7 +74,7 @@ hr {
 .main-news {
     background-color: #e5c0d5;
     opacity: 0.9;
-    z-index: 1;
+    z-index: -1;
 }
 
 .post {
@@ -69,4 +98,8 @@ hr {
   float:right;
   opacity: 0.75;
   height: 46rem;
+}
+
+.ad {
+    padding-top: 1.5rem;
 }
