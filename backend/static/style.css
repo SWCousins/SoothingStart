@@ -1,0 +1,115 @@
+body {
+    background-color: #e5c0d5;
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+hr {
+    height: 0px;
+    border: none;
+    border-top: 2px solid black;
+    margin-left: 1rem;
+}
+
+.title {
+    margin-left: 7rem;
+    height: 5rem;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ccc;
+  position:fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  justify-content:center;
+  float: right;
+  background-color: paleturquoise;
+  padding: 0.5rem;
+  margin-right: 18rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.btn {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.panel {
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.icon {
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-left: 10px;
+}
+
+.menu {
+    opacity: 0.65;
+    background-color: aliceblue;
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.text {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+.large {
+    font-size: 10rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-news {
+    background-color: #e5c0d5;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.post {
+    background-color: azure;
+    opacity: 0.8;
+}
+
+.featured {
+    background-color: bisque;
+}
+
+.border {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.ad-panel {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  float:right;
+  opacity: 0.75;
+  height: 46rem;
+}
+
+.ad {
+    padding-top: 1.5rem;
+}
